@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Starbuzz Bean Machine</title>
+    <link rel="stylesheet" href="starbuzz.css">
+    <link rel="stylesheet" href="styledform.css">
+  </head>
+  <body>
+
+    <h1>The Starbuzz Bean Machine</h1>
+    <h2>Fill out the form below and click submit to order</h2>
+<form  action="http://starbuzzcoffee.com/processorder.php" method="POST">
+  <div class="tableRow">
+  <p>
+    Choose your beans:
+  </p>
+  <p>
+    <select name="thembeans">
+      <option value="House Blend">House Blend</option>
+      <option value="Bolivia">Bolivia</option>
+      <option value="Guatemala">Organic Guatemala</option>
+      <option value="Kenya">Kenya</option>
+    </select>
+  </p>
+</div>
+<div class="tableRow">
+<P>Type: </p>
+<p>
+  <input type="radio" name="beantype" value="whole">Whole bean<br>
+  <input type="radio" name="beantype" value="ground" checked>Ground
+</P>
+</div>
+<div class="tableRow">
+<p>Number of bags:</p>
+<p><input type="number" name="bags" min="1" max="10"></p>
+</div>
+<div class="tableRow">
+<p>Must arrive by date:</p>
+<p> <input type="date"></p>
+</div>
+<div class="tableRow">
+<p>Extras:</p>
+  <p>
+  <input type="checkbox" name="extras[]" value="giftwrap">Gift wrap<br>
+  <input type="checkbox" name="extras[]" value="catalog" checked>Include catalog
+  with order
+  </p>
+</div>
+<div class="tableRow">
+<p class="heading">Ship to: </p>
+  <p></p>
+</div>
+<div class="tableRow">
+  <p>Name:</p>
+  <p><input type="text" name="name" value="" placeholder="Yang Yang" required></p>
+</div>
+<div class="tableRow">
+  <p>Address:</p>
+  <p><input type="text" name="address" value="" placeholder="Banzai Institute" required></p>
+</div>
+<div class="tableRow">
+  <p>City:</p>
+  <p><input type="text" name="city" value="" placeholder="Los Angeles" required></p>
+</div>
+<div class="tableRow">
+  <p>State:</p>
+  <p><input type="text" name="state" value="" placeholder="CA" required></p>
+</div>
+<div class="tableRow">
+  <p>Zip:</p>
+  <p><input type="text" name="zip" value="" placeholder="10010" required></p>
+</div>
+<div class="tableRow">
+  <p>Phone:</p>
+  <p><input type="text" name="phone" value="" placeholder="123-123-1234" required></p>
+</div>
+<div class="tableRow">
+<p>Customer
+  Comments:</p>
+<p>
+  <textarea name="comments" cols="48" rows="10"></textarea>
+</p>
+</div>
+<div class="tableRow">
+<p></p>
+<p>
+  <input type="submit" value="Order Now">
+</p>
+</div>
+</form>
+
+
+  </body>
+</html>
